@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>Dashboard</h2>
+
+<div class="content">
+    <table id="tbDashboard">
+        <thead>
+            <tr>
+                <th>Group Name</th>
+                <th>Score</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Group 1</td>
+                <td><input type="text" id="txtGroup1Score" class="txtScore" readonly /></td>
+                <td>
+                    <button type="button" class="btnPlusScore" onclick="plusScore(this);">+</button>
+                    <button type="button" class="btnMinusScore" onclick="minusScore(this)">-</button>
+                    <button type="button" class="btnAddRow" onclick="addRow(this);">Add new Group</button>
+                    <button type="button" class="btnDelete" onclick="deleteRow(this);">Delete this Group</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="~/Scripts/src/output/dashboard.js"></script>

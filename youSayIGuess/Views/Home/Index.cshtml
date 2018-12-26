@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "你说我猜";
+}
+<h2>你说我猜</h2>
+<div class="content">
+    <div id="divBegin" class="show">
+        <button type="button" id="btnBegin">开始</button>
+    </div>
+
+    <div id="divGame" class="hide">
+        <p id="pWord" class="pWording"></p>
+        <button type="button" id="btnNext">下一个</button>
+        <div class="divTimer">
+            <span id="spanTimer">02:00</span>
+        </div>
+    </div>
+
+    <div id="divEnd" class="hide">
+        <p class="pWording">时间到！比赛结束。下一组准备。</p>
+        <button type="button" id="btnRestart">准备好了！</button>
+    </div>
+
+</div>
